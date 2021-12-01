@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1 class="headSign">SignUp</h1>
+                </div>
+                        <div class="mb-3">
+                            <label>Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="name" value={{name}}>
+                            <div class= "errorResult">{{result}}</div>
+
+                            
+                            <label>MobileNo</label>
+                            <input type="text" class="form-control" [(ngModel)]="mobileNo" value={{mobileNo}}>
+                            <div class= "errorResult">{{phoneNumberMessage}}</div>
+
+
+                            <label>Email</label>
+                            <input type="email" class="form-control" [(ngModel)]="email" value={{email}}>
+                            <div class= "errorResult">{{result}}</div>
+
+                      
+                            <label>Username</label>
+                            <input type="text" class="form-control" [(ngModel)]="userName" value={{userName}} >
+                            <div class= "errorResult">{{result}}</div>
+
+                            <label>Password</label>
+                            <input type="text" class="form-control" [(ngModel)]="password" value={{password}}>
+                            <div class= "errorResult">{{result}}</div>
+
+                        </div>
+                        <div class="newButton">
+                        <button (click)="signUpSuccess()" class="btn btn-primary">SignUp</button>
+                        <button (click)="clearInput()" class="btn btn-primary rightClear">Clear</button>
+                        </div>
+                        <div class= "errorResult">{{message}}</div>
+                        <div class= "successResult">{{loginSuccess}}</div>
+                      
+                      <a class="linkNav" routerLink="/login">Already Register? Click to Login!!</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<h1>Student Entry</h1>
+Student Name <input type = text [(ngModel)] = studentName value =studentName><br> <br>
+<!-- Enter Student address <input type = text [(ngModel)] = address value =address><br> <br>
+Enter Student contact Number <input type = text [(ngModel)] = contactNumber value =contactNumber><br> <br>  -->
+<button (click) = "addStudentInList()">Add Student</button> <br>
+{{message}}<br>
+<form>
+ <button (click) = "viewStudentList()">View Student List</button> <br> 
+ </form>
+<!-- <form>
+    <table>
+        <tr *ngFor="let student of studentList">
+            <td>{{student}}</td>
+        </tr>
+    </table> 
+</form>  -->
+<!-- <input type = button name = "StudentList" value ="View Student List"> <br> -->
+ <button (click) = "clear()">Cancel</button> <br><br> 
+<!-- <button (click) = "buttonAction()" >{{buttonLabel}}</button> -->

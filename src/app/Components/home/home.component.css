@@ -1,0 +1,39 @@
+* {
+  text-decoration: none;
+}
+.card {
+  margin-top: 10px;
+  border: none;
+  width: 85%;
+  padding: 40px;
+  position: absolute;
+  background: rgb(0, 54, 71);
+}
+
+.text-center {
+  color: rgb(255, 217, 217);
+  font-size: 3em;
+}
+
+.componentFirst a {
+  background-color: rgb(17, 135, 231);
+  color: azure;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.componentSecond a {
+  background-color: rgb(104, 33, 0);
+  color: azure;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}

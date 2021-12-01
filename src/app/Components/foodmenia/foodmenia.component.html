@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Food Fats Details</h1>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <td>Name</td>
+        <td>Type</td>
+        <!-- <td>Image</td> -->
+        <td>Calorie</td>
+        <td>Total Fat</td>
+        <td>SaturatedFat</td>
+        <td>Cholesterol</td>
+        <td>Carb</td>
+        <td>DietaryFiber</td>
+        <td>Protein</td>
+        <!-- <td>RecipeUrl</td> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let food of foodsDetails">
+        <td>{{ food.foodName }}</td>
+        <td>{{ food.foodType }}</td>
+        <!-- <td>{{ food.foodImage}} </td> -->
+        <td>{{ food.calorie }}</td>
+        <td>{{ food.totalFat }}</td>
+        <td>{{ food.saturatedFat }}</td>
+        <td>{{ food.cholesterol }}</td>
+        <td>{{ food.carb }}</td>
+        <td>{{ food.dietaryFiber }}</td>
+        <td>{{ food.protein }}</td>
+        <!-- <td>{{ food.recipeURL}} </td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>

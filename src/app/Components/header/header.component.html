@@ -1,0 +1,26 @@
+<header>
+    <div class="navbar navbar-dark bg-secondary shadow">
+        <div class="navbar-brand aligh-item-center d-flex">
+            <i style="font-size: 40px; margin-left: 20px; margin-right: 7px;" class="fas fa-shipping-fast">
+            </i>
+            <strong style = "font-size: 30px;">MyShop</strong>
+            <div class="form-group">
+                <input class = "form-control" type="text" placeholder="search product">
+            </div>
+            <span class="fas fa-search search-icon"></span>
+        </div>
+            <div class="newButton">
+                <input type=button (click)="buttonAction()" value={{buttonLabel}} class="btn bg-dark fontColor button" >
+<!--
+                <div *ngIf="isUserLoggedIn; else logout">
+                    <a class="btn bg-dark fontColor button" routerLink="/login">Signin</a>
+
+                    <a class="btn bg-dark fontColor button" routerLink="/signup">Register</a>
+                </div>
+                <ng-template #logout>
+                    <a class="btn bg-dark fontColor" routerLink="/header">SignOut</a>
+                </ng-template>
+                -->
+           </div>
+    </div>
+</header>

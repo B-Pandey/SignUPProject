@@ -1,0 +1,29 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h2 class="headSign">SI Calculater Using Pipe</h2>
+                </div>
+               
+            <label>Enter Principal amount</label>
+            <input type= text [(ngModel)]=principal value = {{principal}}><br>
+            
+            <label>Enter Priod in Years</label>
+            <input type= text [(ngModel)]=period value = {{period}}><br>
+
+            <label>Enter Rate of Interest</label>
+            <input type= text [(ngModel)]=rate  value = {{rate}}><br><br>
+            
+            <button class="btn btn-primary">Calculate Simple Interest</button><br>
+
+            <div class= "resultSI">Simple Interest Using Pipe : {{principal | si: period:rate}}</div>
+            <!-- {{ value | pipeName(si) argument1: argument1, argument3}-->
+            <!--int returnValue = funcationName(value, arg1, arg2,...)-->
+            </div>
+        </div>
+    </div>
+</div>
+

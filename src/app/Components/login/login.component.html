@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container ">
+    <div class="row">
+        <div class="col-md-6 " >
+            <div class="card ">
+                <div class="text-center">
+                    <h1 class="SignUpHead ">Login</h1>
+                </div>
+                        <div class="mb-3">
+                          <label>Email address or Username</label>
+                          <input type="text" class="form-control" [(ngModel)]="username" value={{username}}>
+                        </div>
+                        <div class="mb-3">
+                          <label>Password</label>
+                          <input type="text" class="form-control" [(ngModel)]="password" value={{password}}>>
+                        </div>
+                        <div class="newButton">
+                        <button (click)="isLoginSuccess()" class="btn btn-primary">SignIn</button>
+                        <button (click)="clearInput()" class="left" class="btn btn-primary rightClear">Clear</button> 
+                        </div>
+                        <div class= "resultSuccess">{{resultSuccess}}</div>
+                        <div class= "resultFail">{{resultFail}}</div>
+                    <a class="linkNav" routerLink="/signup">New User? Click here to signup!!</a>
+            </div>
+        </div>
+    </div>
+</div>

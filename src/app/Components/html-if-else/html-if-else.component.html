@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1 class="SignUpHead">HTML-if/else</h1>
+                </div>
+                <h1> User Status1 </h1>
+                <div *ngIf="isUserLoggedIn; else myNepal">
+                  <p style="background-color: green;color:white">
+                     Yes User is logged in1 </p>
+                     <app-login></app-login>
+             </div>
+             <ng-template #myNepal>
+                 <p style="background-color: red; color:white">
+                      red No User is NOT logged in yet1 </p>
+                      <app-signin></app-signin>
+             </ng-template>
+             <div *ngIf="isUserLoggedIn; else myNepal1">
+                  <p style="background-color: purple;color:white">
+                     Yes User is logged in 2 </p>
+                     <app-login></app-login>
+             </div>
+             <ng-template #myNepal1>
+                 <p style="background-color: cyan; color:white">
+                      cyan No User is NOT logged in yet2 </p>
+                      <app-signin></app-signin>
+             </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

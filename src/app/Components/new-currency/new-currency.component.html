@@ -1,0 +1,42 @@
+<!-- <table>
+  <tr *ngFor="let theCountry of countryOptions">
+    <td>{{ theCountry }}</td>
+  </tr>
+</table> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        Enter Source:
+        <select name="source" [(ngModel)]="source">
+          <option
+            *ngFor="let theCountry of countryOptions"
+            [value]="theCountry"
+          >
+            {{ theCountry }}
+          </option>
+        </select>
+
+        Enter Target:
+        <select name="target" [(ngModel)]="target">
+          <option
+            *ngFor="let theCountry of countryOptions"
+            [value]="theCountry"
+          >
+            {{ theCountry }}
+          </option>
+        </select>
+
+        <br />
+        <label>Enter Amount To Convert:</label>
+        <input type="text" name="amount" [(ngModel)]="amount" />
+        <br />
+        <input type="button" (click)="goForConvert()" value="Convert" />
+        <br />
+        <div class="convertedAmount">
+          Converted amount is : {{ convertedAmount }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

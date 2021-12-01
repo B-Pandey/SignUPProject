@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="select">
+          <label> Source Country </label>
+          <select name="source" [(ngModel)]="source">
+            <option >USD</option>
+            <option >INR</option>
+            <option >EUR</option>
+          </select>
+        </div>
+        <div class="select">
+          <label> Teaget Country </label>
+          <select name="target" [(ngModel)]="target">
+            <option >USD</option>
+            <option >INR</option>
+            <option >EUR</option>
+          </select>
+        </div>
+        <label>Enter Amount To Convert:</label>
+        <input type="text" name="amount" [(ngModel)]="amount" />
+        <input type="button" (click)="goForConvert()" value="Convert" />
+        <div class="convertedAmount">
+          Converted amount is : {{ convertedAmount }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+        <br />
+        <br />
+        <hr />
+
+        Enter source country
+        <input type="text" name="source" [(ngModel)]="source" /> <br />
+        Enter target country
+        <input type="text" name="target" [(ngModel)]="target" /> <br />
+        Enter amount to convert
+        <input type="text" name="amount" [(ngModel)]="amount" /> <br />
+
+        Converted amount is : {{ convertedAmount }}
+        <input type="button" (click)="goForConvert()" value="Convert" />
+   -->
+<!--Enter target country <input type="text" name = "target" [(ngModel)] = "target"> <br> -->
+
+<!-- droped down button for asssignment -->
+<!-- source USD/INR/EUR -->
+<!-- Target USD/INR/EUR -->
+<!-- but sosurce and target  must not be the same-->
+<!-- if they are same then It should suffle the values -->
+<!-- use the select tag for the drop down-->

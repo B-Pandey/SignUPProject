@@ -1,0 +1,44 @@
+*{
+    text-decoration: none;
+}
+.card{
+    margin-top: 10px;
+    border:none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 54, 71);
+}
+a.linkNav{
+    color: white; margin-top: 10px;
+}
+
+.rightClear{
+    float: right;
+}
+.errorResult{
+    color:red;
+}
+.resultFail{
+color: rgb(190, 255, 137);
+font-size: 1.2em;
+text-align: center;
+}
+.resultSuccess{
+    color: rgb(255, 125, 93);
+    font-size: 1.2em;
+    text-align: center;
+    }
+.SignUpHead{
+    color: rgb(255, 208, 0);
+
+}
+label{
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+}
+

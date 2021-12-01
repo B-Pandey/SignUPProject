@@ -1,0 +1,41 @@
+*{
+    text-decoration: none;
+}
+.card{
+    margin-top: 10px;
+    border:none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 54, 71);
+}
+a.linkNav{
+    color: white; margin-top: 10px;
+}
+
+.rightClear{
+    float: right;
+}
+.resultSI{
+    color:rgb(255, 255, 255);
+}
+
+.headSign{
+    color: rgb(255, 187, 0);
+}
+label{
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+button{
+    padding: 5px;
+    color:rgb(255, 255, 255);
+    font-size: 1.4em;
+    text-align: center;
+}

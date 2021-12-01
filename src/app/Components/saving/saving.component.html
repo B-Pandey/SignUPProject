@@ -1,0 +1,14 @@
+<p>saving works!</p>
+
+<table border="1">
+  <thead>
+    <th>Account Number</th>
+    <th>Account Name</th>
+    <th>Account Balance</th>
+  </thead>
+  <tr *ngFor = "let mySavings of myAllSavings">
+    <td>{{ mySavings.acno }}</td>
+    <td>{{ mySavings.acname }}</td>
+    <td>{{ mySavings.acbalance }}</td>
+  </tr>
+</table>

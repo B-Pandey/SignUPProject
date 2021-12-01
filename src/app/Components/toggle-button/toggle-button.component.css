@@ -1,0 +1,32 @@
+.select {
+  width: 300px;
+  align-items: center;
+}
+input {
+  text-align: center;
+}
+.card {
+  margin-top: 10px;
+  border: none;
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 56, 30);
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+label {
+  padding: 10px 20px;
+}
+.convertedAmount {
+  padding: 20px;
+  color: rgb(255, 187, 0);
+}
+.container {
+  margin-top: 20px;
+}

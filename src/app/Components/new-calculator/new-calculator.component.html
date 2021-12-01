@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1 class="SignUpHead">Simple Calculator</h1>
+        </div>
+
+        <div class="inputBlock">
+          <input type="text" [(ngModel)]="number1" value="{{ number1 }}" />
+          <input
+            type="text"
+            [(ngModel)]="number2"
+            value="{{ number2 }}"
+          /><br />
+        </div>
+
+        <div class="calculate">
+          <button class="add" (click)="add()">
+            <i class="fas fa-plus"></i>
+          </button>
+
+          <button class="substract" (click)="substract()">
+            <i class="fas fa-minus"></i>
+          </button>
+          <button class="multiple" (click)="multiple()">
+            <i class="fas fa-times"></i>
+          </button>
+          <button class="divide" (click)="divide()">
+            <i class="fas fa-divide"></i>
+          </button>
+          <button class="clear" type="button" (click)="clear()">CLEAR</button>
+        </div>
+        <div class="resultOut" *ngIf="!isError">
+          {{ result }}
+        </div>
+        <div class="resultOut" *ngIf="isError">
+          {{ message }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
